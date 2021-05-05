@@ -159,3 +159,161 @@ footer{
     border-radius: 50px;
     box-shadow: var(--shadow);
 }
+
+.info{
+    display: grid;
+    grid-gap: 30px;
+    background: var(--dark);
+    box-shadow: var(--shadow);
+    padding: 3em;
+    grid-template-areas: 
+    'header header'
+    'image text';
+    color: white;
+    margin: 5em;
+}
+
+.info .info_header{
+    grid-area: header;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.info .info_video{
+    grid-area: video;
+}
+
+.info .info_p{
+    grid-area: text;
+}
+
+
+
+.info2{
+    display: grid;
+    grid-gap: 30px;
+    background: var(--dark);
+    box-shadow: var(--shadow);
+    padding: 3em;
+    grid-template-areas: 
+    'header header'
+    'image text';
+    color: var(--white);
+    margin: 5em;
+}
+
+.info2 .info2_header{
+    grid-area: header;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.info2 .info2_video{
+    grid-area: video;
+}
+
+.info2 .info2_p{
+    grid-area: text;
+}
+
+.info3{
+    display: grid;
+    grid-gap: 30px;
+    background: var(--dark);
+    box-shadow: var(--shadow);
+    padding: 3em;
+    grid-template-areas: 
+    'header header'
+    'video1 video2';
+    color: var(--white);
+    margin: 5em;
+    justify-items: center;
+}
+
+.info3 .info3_header{
+    grid-area: header;
+    font-size: 1.5em;
+}
+
+.info3 .info3_video1{
+    grid-area: video1;
+}
+
+.info3 .info3_video2{
+    grid-area: video2;
+}
+
+.info3 iframe{
+    width: 100%;
+    border: none;
+}
+
+
+
+
+
+.info p{
+    font-size: 2em;
+}
+
+.info2 p{
+    font-size: 2em;
+}
+
+.info img{
+    width: 100%;
+}
+
+.info2 img{
+    width: 100%;
+}
+
+@media(max-width: 568px){
+
+
+    .location ul{
+        margin: 0;
+        font-size: 25px;
+    }
+
+    .info{
+        grid-template-columns: 1fr;
+        
+    }
+
+    .info2{
+        grid-template-columns: 1fr;
+        
+    }
+
+    .info p{
+        display: none;
+    }
+
+    .info2 p{
+        display: none;
+    }
+
+    .main-nav ul{
+        grid-template-columns: 1fr;
+    }
+
+    .container{
+        grid-template-areas: 
+        'header'
+        'live_bait'
+        'live_fish'
+        'cold_bait'
+        'prices';
+    }
+
+    
+
+    .info3{
+        grid-template-areas: 
+        'header'
+        'video1'
+        'video2';
+    }
+
+}
